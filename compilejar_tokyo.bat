@@ -38,7 +38,7 @@ IF EXIST %FileName% goto ERROR
 
 echo Compiling the Java Sources
 mkdir source\output 2> nul
-%JDK_PATH%\javac -source 1.7 -target 1.7 -bootclasspath %JDK_PATH1_7%\jre\lib\rt.jar -Xlint:unchecked -Xlint:deprecation -cp^
+%JDK_PATH%\javac -source 1.7 -target 1.7 -bootclasspath %JDK_PATH1_7%\..\jre\lib\rt.jar -Xlint:unchecked -Xlint:deprecation -cp^
  %ANDROID_PLATFORM%\android.jar;%FMX_JAR%;^
 lib\jar\me.leolin\shortcutbadger.jar;^
 lib\jar\com.facebook.android\facebook-common.jar;^
